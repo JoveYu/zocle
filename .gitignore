@@ -1,0 +1,9 @@
+*.os
+*.o
+*.a
+*.dylib
+*.so
+.sconsign*
+*.swp
+*.so.*
+*.so

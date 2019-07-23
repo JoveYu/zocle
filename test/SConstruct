@@ -1,0 +1,12 @@
+
+includes	= ['../include', '.']
+libs		= ['zocle','check']
+libpath		= ['../']
+files = Glob("*.c") + Glob("*/*.c")
+
+env = Environment(
+        CPPPATH=includes,
+        LIBPATH=libpath,
+        LIBS=libs,
+)
+env.Program(target='main', source=files)
